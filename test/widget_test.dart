@@ -10,20 +10,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:personal_homepage/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Personal homepage smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const PersonalHomepage());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Wait for any async operations to complete
+    await tester.pumpAndSettle();
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify that the app loads without crashing
+    expect(find.byType(Scaffold), findsOneWidget);
+    
+    // Check if loading indicator appears initially
+    expect(find.byType(CircularProgressIndicator), findsAny);
   });
 }

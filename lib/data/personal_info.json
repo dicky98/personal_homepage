@@ -1,0 +1,33 @@
+{
+  "name": "张三",
+  "title": "全栈开发工程师 | Flutter专家 | 开源贡献者",
+  "description": "欢迎来到我的个人首页！我是一名充满激情的全栈开发工程师，专注于移动端和Web端的应用开发。擅长Flutter、React和Node.js等技术栈，热爱开源项目，致力于创造优秀的用户体验。在工作之余，我喜欢学习新技术、分享技术文章，并积极参与技术社区的建设。",
+  "avatarPath": "",
+  "skills": [
+    "Flutter",
+    "Dart",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Vue.js",
+    "Node.js",
+    "Python",
+    "Java",
+    "Firebase",
+    "MongoDB",
+    "PostgreSQL",
+    "Git",
+    "Docker",
+    "AWS",
+    "微信小程序",
+    "RESTful API",
+    "GraphQL"
+  ],
+  "contact": {
+    "email": "zhang.san@example.com",
+    "github": "https://github.com/zhangsan",
+    "linkedin": "https://linkedin.com/in/zhangsan-dev",
+    "website": "https://zhangsan.dev",
+    "phone": "+86 138-8888-8888"
+  }
+}
